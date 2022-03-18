@@ -26,7 +26,7 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
     Data non numerik dengan kategori associate's degree, bachelor's degree, high school, master's degree, some college, some high school. Pada kolom ini juga akan dilakukan one hot encoding
 - Lunch
     Data non numerik berupa kategori free/reduced dan standard. Kolom ini juga akan dilakukan one hot encoding
-    !(https://github.com/hanru789/submision1-mlt/blob/main/pie-linch.png)
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-linch.png)
 - Test preparation course
     Data non numerik berupa kategori completed dan none. Akan dilakukan one hot encoding pada kolom ini.
 - Math score
