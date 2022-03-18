@@ -22,16 +22,16 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
 ![This is an image](https://github.com/hanru789/submision1-mlt/blob/main/pie-gender.png)
 - Etnis
     Data non numerik berupa kategori group A, group B, group C, group D, dan group E. Pada kolom ini juga akan dilakukan one hot encoding
-    !{}(https://github.com/hanru789/submision1-mlt/blob/main/pie-race.png)
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-race.png)
 - Parental level of education
     Data non numerik dengan kategori associate's degree, bachelor's degree, high school, master's degree, some college, some high school. Pada kolom ini juga akan dilakukan one hot encoding
-    !{}(https://github.com/hanru789/submision1-mlt/blob/main/pie-parent_education.png)
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-parent_education.png)
 - Lunch
     Data non numerik berupa kategori free/reduced dan standard. Kolom ini juga akan dilakukan one hot encoding
     ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-linch.png)
 - Test preparation course
     Data non numerik berupa kategori completed dan none. Akan dilakukan one hot encoding pada kolom ini.
-    !{}(https://github.com/hanru789/submision1-mlt/blob/main/pie-test_prep.png)
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-test_prep.png)
 - Math score
     Data numerik. Pada kolom ini terdapat nilai siswa dengan nilai nol, hal ini terdeteksi ketika dilakukan pengecekan data yang hilang. Setelah ditelusuri itu bukan merupakan missing value karena memang suatu hal yang mungkin seorang siswa mendapatkan nilai nol pada ujian matematika.
 - Reading score
