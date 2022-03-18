@@ -19,7 +19,7 @@ Projek ini dilakukan dengan menggunakan dataset [Students Performance in Exams](
 Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkirakan capaian prestasi siswa. Data ini terdiri dari seribu baris dan delapan kolom. Delapan kolom adalah sebagai berikut:
 - Gender
     Data non numerik berupa kategori male dan female. Pada variabel ini akan dilakukan one hot encoding.
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://github.com/hanru789/submision1-mlt/blob/main/pie-gender.png)
 - Etnis
     Data non numerik berupa kategori group A, group B, group C, group D, dan group E. Pada kolom ini juga akan dilakukan one hot encoding
 - Parental level of education
