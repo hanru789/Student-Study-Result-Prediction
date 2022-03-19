@@ -54,7 +54,7 @@ Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level
 
 ## Data Preparation
 - Data Cleaning
-    Ketika dilakukan pengecekan missing value terdapat sebuah nilai nol pada kolom math test. Setelah diselidiki ternyata itu tidak dapat dikategorikan sebagai missing value karena tidak mustahil siswa memperoleh nilai nol dalam pelajaran matematika.
+    Ketika dilakukan pengecekan missing value terdapat sebuah nilai nol pada kolom math test. Setelah diselidiki ternyata itu tidak dapat dikategorikan sebagai missing value karena tidak mustahil siswa memperoleh nilai nol dalam pelajaran matematika. Pada data numerik terdapat outliers sehingga dilakukan penanganan menggunakan IQR Methode. Metode ini dilakukan dengan membuang data yang memiliki nilai lebih kecil dari quartil bawah dikuran 1,5 IQR dan quartil atas ditambah 1,5 IQR.
 - Feature Selection
     Pada proyek ini tidak dilakukan feature selection karena seluruh fitur digunakan baik sebagai atribut maupun target. Hal ini dikarenakan proyek ini bukan berorientasi sepenuhnya untuk mendapatkan akurasi prediksi maksimal, tetapi untuk mengkategorikan keberhasilan siswa di sekolah berdasarkan faktor-faktor yang ada.
 - Data Transform
@@ -87,7 +87,9 @@ Modeling adalah tahap pemilihan model yang dirasa paling powerful sesuai kebutuh
 Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi.
 
 ## Evaluation
-Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,46
+Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
+
+![](https://github.com/hanru789/submision1-mlt/blob/main/plot-try.png)
 
 
 [^1]: L. A. Arifin, "HUBUNGAN SARAPAN PAGI DENGAN KONSENTRASI SISWA DI SEKOLAH," Jurnal Pendidikan Olahraga dan Kesehatan, pp. 203 - 207, 2015. 
