@@ -62,6 +62,7 @@ Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level
     | C | 70 - 79 |
     | D | 60 - 69 |
     | E | < 60 |
+   
    Nilai berupa predikat ini diolah kembali menggunakan one hot encoder sehingga menjadi lima kolom. Lima kolom ini yang menjadi label pada model machine learning.
 
 
