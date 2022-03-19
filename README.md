@@ -1,8 +1,8 @@
 # Laporan Proyek Machine Learning- Ruhan Masykuri
 ## Domain Proyek
-Proyek ini dilakukan untuk membuat model yang dapat memperkirakan kemungkinan hasil belajar siswa di sekolah. Sekolah adalah tempat siswa melakukan belajar secara intensif sehingga keberhasilan sekolah tidak hanya bergantung pada kegiatan siswa selama jam pelajaran. Berdasarkan penelitian diketahui bahwa sarapan pagi memiliki pengaruh signifikan terhadap konsentrasi siswa pada jam pelajaran berlangsung [^1]. Selain itu latar belakang siswa, kegiatan siswa diluar jadwal sekolah, dan berbagai hal lainnya tentu memiliki korelasi tersendiri terhadap capaiyan sekolah para siswa.
+Proyek ini dilakukan untuk membuat model yang dapat memperkirakan kemungkinan hasil belajar siswa di sekolah. Sekolah adalah tempat siswa melakukan belajar secara intensif sehingga keberhasilan sekolah tidak hanya bergantung pada kegiatan siswa selama jam pelajaran. Berdasarkan penelitian diketahui bahwa sarapan pagi memiliki pengaruh signifikan terhadap konsentrasi siswa pada jam pelajaran berlangsung [^1]. Selain itu latar belakang siswa, kegiatan siswa diluar jadwal sekolah, dan berbagai hal lainnya tentu memiliki korelasi tersendiri terhadap capaian  sekolah para siswa.
 
-Projek ini perlu dilakukan karena model yang dihasilkan dapat memperkirakan bagaimana prestasi yang dapat dicapai siswa di sekolah. Dengan mengetahui hal tersebut diharapkan siswa maupun keluarga siswa dapat mengevaluasi dan meningkatkan hal yang perlu ditingkatkan agar capaiyan pembelajaran siswa dapat meningkat.
+Projek ini perlu dilakukan karena model yang dihasilkan dapat memperkirakan bagaimana prestasi yang dapat dicapai siswa di sekolah. Dengan mengetahui hal tersebut diharapkan siswa maupun keluarga siswa dapat mengevaluasi dan meningkatkan hal yang perlu ditingkatkan agar capaian  pembelajaran siswa dapat meningkat.
 
 ## Busines Understanding
 
@@ -53,9 +53,9 @@ Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level
     Pada proyek ini tidak dilakukan feature selection karena seluruh fitur digunakan baik sebagai atribut maupun target. Hal ini dikarenakan proyek ini bukan berorientasi sepenuhnya untuk mendapatkan akurasi prediksi maksimal, tetapi untuk mengkategorikan keberhasilan siswa di sekolah berdasarkan faktor-faktor yang ada.
 - Data Transform
     Data non numerik terdapat pada kolom gender, etnis, parental level of education, lunch, dan test preparation  course. Data non numerik ini perlu diubah menjadi data numerik agar dapat dimengerti oleh komputer. Dilakukan teknik one hot encoder sehingga kolom non numerik berubah menjadi beberapa kolom sejumlah variasi nilainya dengan nilai berupa biner. Lima kolom kemudian berubah menjadi 17 kolom yang kemudian menjadi atribut dalam model machine learning.
-- Feature Enginering
+- Feature Engineering
     Data numerik pada dataset ini adalah math score, reading score, dan writing score. Nilai ketiga kolom ini dirata-ratakan  dan menjadi satu kolom rata-rata nilai. Nilai pada kolom rata-rata memiliki range dari 1 – 100 sehingga perlu diubah menjadi lima predikat.
-    | Prediket | Nilai |
+    | Predikat  | Nilai |
     | -------- | ----- |
     | A | 90 - 100 |
     | B | 80 - 89 |
@@ -75,7 +75,7 @@ Modeling adalah tahap pemilihan model yang dirasa paling powerful sesuai kebutuh
 - Layer pertama berfungsi sebagai input yang menerima masukan berupa numerik dari atribut dataset. Jumlah perceptron pada layer pertama ini disesuaikan dengan berapa input yang dibutuhkan.
 - Bobot dari input lah yang akan melatih perceptron menentukan berapa parameternya.
 - Selanjutnya setiap input akan dikalikan dengan bobotnya masing-masing.lalu hasilnya akan ditambahkan dengan bias
-S- elanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network.
+- Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network.
 
 Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi.
 
