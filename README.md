@@ -39,10 +39,13 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
 ![](https://github.com/hanru789/submision1-mlt/blob/main/pie-test_prep.png)
 - Math score
     Data numerik. Pada kolom ini terdapat nilai siswa dengan nilai nol, hal ini terdeteksi ketika dilakukan pengecekan data yang hilang. Setelah ditelusuri itu bukan merupakan missing value karena memang suatu hal yang mungkin seorang siswa mendapatkan nilai nol pada ujian matematika.
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-math.png)
 - Reading score
     Data numerik
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-read.png)
 - Writing score
     Data numerik
+    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-write.png)
 
 Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level of education, lunch, dan test preparation course. Targetnya adalah nilai rata-rata dari kolom math score, reading score, dan writing score. Rata-rata dari ketiga nilai ujian tersebut dapat mewakili penilaian keberhasilan belajar siswa. Nilai rata-rata berupa numerik diubah menjadi predikat sehingga nilai akhir yang menjadi target adalah predikat A sampai E.
 
