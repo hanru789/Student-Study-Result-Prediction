@@ -62,7 +62,7 @@ Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level
     | C | 70 - 79 |
     | D | 60 - 69 |
     | E | < 60 |
-    Nilai berupa predikat ini diolah kembali menggunakan one hot encoder sehingga menjadi lima kolom. Lima kolom ini yang menjadi label pada model machine learning.
+   Nilai berupa predikat ini diolah kembali menggunakan one hot encoder sehingga menjadi lima kolom. Lima kolom ini yang menjadi label pada model machine learning.
 
 
 Data yang terdapat pada dataset tidak serta merta bisa digunakan langsung menjadi input model machine learning. Kadang dataset itu bisa berupa gambar, suara, dan teks yang tidak bisa dimengerti oleh komputer. Jika kita memaksakan  data mentah langsung menjadi input training model machine learning, model yang dihasilkan tidak akan bekerja optimal. Berbagai teknik perlu dilakukan kepada data agar model yang dihasilkan dapat bekerja dengan optimal.
