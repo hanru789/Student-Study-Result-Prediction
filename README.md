@@ -24,31 +24,31 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
 - Etnis
     Data non numerik berupa kategori group A, group B, group C, group D, dan group E. Pada kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision1-mlt/blob/main/pie-race.png)
+![](/pie-race.png)
 - Parental level of education
     Data non numerik dengan kategori associate's degree, bachelor's degree, high school, master's degree, some college, some high school. Pada kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision1-mlt/blob/main/pie-parent_education.png)
+![](/pie-parent_education.png)
 - Lunch
     Data non numerik berupa kategori free/reduced dan standard. Kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision1-mlt/blob/main/pie-linch.png)
+![](/pie-linch.png)
 - Test preparation course
     Data non numerik berupa kategori completed dan none. Akan dilakukan one hot encoding pada kolom ini.
 
-![](https://github.com/hanru789/submision1-mlt/blob/main/pie-test_prep.png)
+![](/pie-test_prep.png)
 - Math score
     Data numerik. Pada kolom ini terdapat nilai siswa dengan nilai nol, hal ini terdeteksi ketika dilakukan pengecekan data yang hilang. Setelah ditelusuri itu bukan merupakan missing value karena memang suatu hal yang mungkin seorang siswa mendapatkan nilai nol pada ujian matematika. Pada data numerik ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-math.png)
+    ![](/outlier-math.png)
 - Reading score
     Data numerik. Pada data numerik reading score ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-read.png)
+    ![](/outlier-read.png)
 - Writing score
     Data numerik. Pada data numerik writing score ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision1-mlt/blob/main/outlier-write.png)
+    ![](/outlier-write.png)
 
 Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level of education, lunch, dan test preparation course. Targetnya adalah nilai rata-rata dari kolom math score, reading score, dan writing score. Rata-rata dari ketiga nilai ujian tersebut dapat mewakili penilaian keberhasilan belajar siswa. Nilai rata-rata berupa numerik diubah menjadi predikat sehingga nilai akhir yang menjadi target adalah predikat A sampai E.
 
@@ -107,7 +107,7 @@ Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat ma
 ## Evaluation
 Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
 
-![](https://github.com/hanru789/submision1-mlt/blob/main/plot-try.png)
+![](/plot-try.png)
 
 
 [^1]: L. A. Arifin, "HUBUNGAN SARAPAN PAGI DENGAN KONSENTRASI SISWA DI SEKOLAH," Jurnal Pendidikan Olahraga dan Kesehatan, pp. 203 - 207, 2015. 
