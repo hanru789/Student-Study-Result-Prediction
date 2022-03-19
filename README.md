@@ -79,7 +79,7 @@ Untuk melihat kinerja model machine learning perlu dilakukan pengujian terhadap 
 
 ## Modeling
 Modeling adalah tahap pemilihan model yang dirasa paling powerful sesuai kebutuhan. Terdapat banyak model yang bisa digunakan untuk suatu dataset. Pada projek ini digunakan neural network. Neural network adalah suatu teknik machine learning yang meniru cara kerja sistem saraf manusia. Setiap perceptron mewakili sebuah sel saraf pada otak manusia. Cara kerja neural network dapat dapat dibagi menjadi empat tahap berikut:
-- Layer pertama berfungsi sebagai input yang menerima masukan berupa numerik dari atribut dataset. Jumlah perceptron pada layer pertama ini disesuaikan dengan berapa input yang dibutuhkan.
+- Layer pertama berfungsi sebagai input yang menerima masukan berupa numerik dari atribut dataset. Jumlah perceptron pada layer pertama ini disesuaikan dengan berapa input yang dibutuhkan. Model berupa neural network empat layer dengan 17 input
 
 ```sh
 Dense(34, activation='relu', input_shape=(17,)),    
@@ -92,12 +92,16 @@ Dense(34, activation='relu', input_shape=(17,)),
 Dense(60, activation='relu'),
 Dense(17, activation='relu'),  
 ```
-- Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network.
+- Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network. Output yang dihasilkan adalah 5 output.
 
 ```sh
 Dense(5, activation='softmax')
 ```
+- Optimizer yang digunakan sgd dan metrik accuracy
 
+```sh
+model.compile(optimizer='sgd', loss='mean_squared_error', metrics=['accuracy'])
+```
 Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi.
 
 ## Evaluation
