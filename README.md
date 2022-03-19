@@ -20,7 +20,7 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
 - Gender
     Data non numerik berupa kategori male dan female. Pada variabel ini akan dilakukan one hot encoding.
 
-![This is an image](https://github.com/hanru789/submision1-mlt/blob/main/pie-gender.png)
+![This is an image](/pie-gender.png)
 - Etnis
     Data non numerik berupa kategori group A, group B, group C, group D, dan group E. Pada kolom ini juga akan dilakukan one hot encoding
 
