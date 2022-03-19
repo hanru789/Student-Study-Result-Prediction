@@ -82,9 +82,9 @@ Modeling adalah tahap pemilihan model yang dirasa paling powerful sesuai kebutuh
 - Layer pertama berfungsi sebagai input yang menerima masukan berupa numerik dari atribut dataset. Jumlah perceptron pada layer pertama ini disesuaikan dengan berapa input yang dibutuhkan.
 - Bobot dari input lah yang akan melatih perceptron menentukan berapa parameternya.
 
-'''sh
+```sh
 Dense(34, activation='relu', input_shape=(17,)),    
-'''
+```
 - Selanjutnya setiap input akan dikalikan dengan bobotnya masing-masing.lalu hasilnya akan ditambahkan dengan bias
 - Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network.
 
