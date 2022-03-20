@@ -71,10 +71,11 @@ Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level
    
    Nilai berupa predikat ini diolah kembali menggunakan one hot encoder sehingga menjadi lima kolom. Lima kolom ini yang menjadi label pada model machine learning.
 
+- Data splitting dilakukan untuk melihat kinerja model machine learning perlu dilakukan pengujian terhadap model tersebut. Untuk itu perlu dilakukan pembagian dari seluruh dataset menjadi 80 persen data training dan 20 persen data yang digunakan untuk pengujian.
 
 Data yang terdapat pada dataset tidak serta merta bisa digunakan langsung menjadi input model machine learning. Kadang dataset itu bisa berupa gambar, suara, dan teks yang tidak bisa dimengerti oleh komputer. Jika kita memaksakan  data mentah langsung menjadi input training model machine learning, model yang dihasilkan tidak akan bekerja optimal. Berbagai teknik perlu dilakukan kepada data agar model yang dihasilkan dapat bekerja dengan optimal.
 
-Untuk melihat kinerja model machine learning perlu dilakukan pengujian terhadap model tersebut. Untuk itu perlu dilakukan pembagian dari seluruh dataset menjadi 80 persen data training dan 20 persen data yang digunakan untuk pengujian. 
+ 
 
 
 ## Modeling
