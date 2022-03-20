@@ -124,10 +124,10 @@ Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror. MSE adala
 
 
 
-Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
+Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,38. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48. Nilai loss dan val_loss yang dihasilkan adalah 0.14.
 
 
-![](https://github.com/hanru789/submision-image/blob/main/plot-try.png)
+![](https://github.com/hanru789/submision-image/blob/main/accuracy-loss.png)
 
 
 [^1]: L. A. Arifin, "HUBUNGAN SARAPAN PAGI DENGAN KONSENTRASI SISWA DI SEKOLAH," Jurnal Pendidikan Olahraga dan Kesehatan, pp. 203 - 207, 2015. 
