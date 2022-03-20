@@ -108,8 +108,14 @@ model.compile(optimizer='sgd', loss='mean_squared_error', metrics=['accuracy'])
 Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi. Jumlah perceptron pada input layer dan output layer haruslah sama dengan jumlah input dan output dari model yang dibuat. Sedangkan pada hidden layer tidak ada ketentuan pasti berapa perceptron yang dibutuhkan, kita bisa melakukan beberapa percobaan untuk mendapatkan berapa perceptron yang optimal agar akurasi yang diperoleh mumpuni dan proses komputasi tidak memakan banyak waktu.
 
 ## Evaluation
-Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan.
+Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Untuk memahami bagaimana akurasi dapat diperoleh, dapat dilihat pada formula berikut.
 ![](https://github.com/hanru789/submision-image/blob/main/accuracy-formula.PNG)
+TN = True Negative
+TP = True Positive
+FN = False Negative
+FP = False Positive
+
+Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror
 
 
 Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
