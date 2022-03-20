@@ -110,12 +110,16 @@ Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat ma
 ## Evaluation
 Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Untuk memahami bagaimana akurasi dapat diperoleh, dapat dilihat pada formula berikut.
 ![](https://github.com/hanru789/submision-image/blob/main/accuracy-formula.PNG)
-TN = True Negative
-TP = True Positive
-FN = False Negative
-FP = False Positive
 
-Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror
+- TN = True Negative
+- TP = True Positive
+- FN = False Negative
+- FP = False Positive
+
+Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror. MSE adalah nilai rata-rata dari kuadrat perbedaan data atau nilai error. Untuk lebih jelas dapat dilihat pada formula berikut.
+![](https://github.com/hanru789/submision-image/blob/main/loss-mse.PNG)
+
+
 
 
 Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
