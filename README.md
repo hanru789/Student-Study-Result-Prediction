@@ -110,8 +110,9 @@ Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat ma
 ## Evaluation
 Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
 
-frac{n!}{k!(n-k)!} = binom{n}{k}
+\usepackage{mathtools}
 
+\frac{n!}{k!(n-k)!} = \binom{n}{k}
 
 ![](https://github.com/hanru789/submision-image/blob/main/plot-try.png)
 
