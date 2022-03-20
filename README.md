@@ -83,17 +83,19 @@ Modeling adalah tahap pemilihan model yang dirasa paling powerful sesuai kebutuh
 - Layer pertama berfungsi sebagai input yang menerima masukan berupa numerik dari atribut dataset. Jumlah perceptron pada layer pertama ini disesuaikan dengan berapa input yang dibutuhkan. Model berupa neural network empat layer dengan 17 input
 
 ```sh
-Dense(34, activation='relu', input_shape=(17,)),    
+Dense(17, activation='relu', input_shape=(17,)),   
 ```
 - Bobot dari input lah yang akan melatih perceptron menentukan berapa parameternya.
 
 - Selanjutnya setiap input akan dikalikan dengan bobotnya masing-masing.lalu hasilnya akan ditambahkan dengan bias
+- Layer ke-2 dan ke-3 merupakan hidden layyer. Layer ke-2 memiliki input 17 dari layer sebelumnya dan menghasilkan output 13 untuk layer ke-3.
+- Layer ke-3 memiliki input 13 dan menghasilkan output 9 untuk output layer.
 
 ```sh
-Dense(60, activation='relu'),
-Dense(17, activation='relu'),  
+Dense(13, activation='relu'),
+Dense(9, activation='relu'), 
 ```
-- Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network. Output yang dihasilkan adalah 5 output.
+- Output layer mendapat input 9 dari layer sebelumnya. Selanjutnya adalah mengaplikasikan fungsi aktivasi yang akan menyesuaikan kebutuhan output dari neural network. Output yang dihasilkan adalah 5 output.
 
 ```sh
 Dense(5, activation='softmax')
@@ -103,7 +105,7 @@ Dense(5, activation='softmax')
 ```sh
 model.compile(optimizer='sgd', loss='mean_squared_error', metrics=['accuracy'])
 ```
-Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi.
+Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat masukan input dan layer keempat akan menghasilkan output berupa prediksi. Jumlah perceptron pada input layer dan output layer haruslah sama dengan jumlah input dan output dari model yang dibuat. Sedangkan pada hidden layer tidak ada ketentuan pasti berapa perceptron yang dibutuhkan, kita bisa melakukan beberapa percobaan untuk mendapatkan berapa perceptron yang optimal agar akurasi yang diperoleh mumpuni dan proses komputasi tidak memakan banyak waktu.
 
 ## Evaluation
 Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,45. Sedangkan akurasi dengan data validation diperoleh val_accuracu  sebesar 0,48
