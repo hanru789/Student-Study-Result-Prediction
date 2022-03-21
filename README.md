@@ -20,35 +20,35 @@ Berdasarkan variable inilah nantinya dibuat model prediksi yang dapat memperkira
 - Gender
     Data non numerik berupa kategori male dan female. Pada variabel ini akan dilakukan one hot encoding.
 
-![This is an image](https://github.com/hanru789/submision-image/blob/main/pie-gender.png)
+![pie-gender](https://user-images.githubusercontent.com/56568893/159194165-26173b6a-bcd0-4822-bfd4-98db7fbece56.png)
 - Etnis
     Data non numerik berupa kategori group A, group B, group C, group D, dan group E. Pada kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision-image/blob/main/pie-race.png)
+![pie-race](https://user-images.githubusercontent.com/56568893/159194280-4510bafb-576b-4590-bc68-757212664251.png)
 - Parental level of education
     Data non numerik dengan kategori associate's degree, bachelor's degree, high school, master's degree, some college, some high school. Pada kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision-image/blob/main/pie-parent_education.png)
+![pie-parent_education](https://user-images.githubusercontent.com/56568893/159194278-07969d90-fda9-4737-b6b9-808560e5bad0.png)
 - Lunch
     Data non numerik berupa kategori free/reduced dan standard. Kolom ini juga akan dilakukan one hot encoding
 
-![](https://github.com/hanru789/submision-image/blob/main/pie-linch.png)
+![pie-linch](https://user-images.githubusercontent.com/56568893/159194277-4f3c32fe-34fd-455b-9af1-b44d35ade8db.png)
 - Test preparation course
     Data non numerik berupa kategori completed dan none. Akan dilakukan one hot encoding pada kolom ini.
 
-![](https://github.com/hanru789/submision-image/blob/main/pie-test_prep.png)
+![pie-test_prep](https://user-images.githubusercontent.com/56568893/159194281-d931aa66-e412-41b9-bcbb-c348ac532f61.png)
 - Math score
     Data numerik. Pada kolom ini terdapat nilai siswa dengan nilai nol, hal ini terdeteksi ketika dilakukan pengecekan data yang hilang. Setelah ditelusuri itu bukan merupakan missing value karena memang suatu hal yang mungkin seorang siswa mendapatkan nilai nol pada ujian matematika. Pada data numerik ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision-image/blob/main/outlier-math.png)
+    ![outlier-math](https://user-images.githubusercontent.com/56568893/159194273-94d6a88f-87e0-4b4f-9482-0f9072aaa149.png)
 - Reading score
     Data numerik. Pada data numerik reading score ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision-image/blob/main/outlier-read.png)
+    ![outlier-read](https://user-images.githubusercontent.com/56568893/159194274-1ff7082c-6079-484a-a860-ba31267119ed.png)
 - Writing score
     Data numerik. Pada data numerik writing score ini terdapat outliers sehingga perlu ditangani.
     
-    ![](https://github.com/hanru789/submision-image/blob/main/outlier-write.png)
+    ![outlier-write](https://user-images.githubusercontent.com/56568893/159194276-105959a5-b939-4dd8-a675-2b276b4a58d4.png)
 
 Yang menjadi atribut pada dataset ini adalah kolom gender, etnis, parental level of education, lunch, dan test preparation course. Targetnya adalah nilai rata-rata dari kolom math score, reading score, dan writing score. Rata-rata dari ketiga nilai ujian tersebut dapat mewakili penilaian keberhasilan belajar siswa. Nilai rata-rata berupa numerik diubah menjadi predikat sehingga nilai akhir yang menjadi target adalah predikat A sampai E.
 
@@ -110,7 +110,7 @@ Neural network ini menggunakan 4 layer yang mana layer pertama menjadi tempat ma
 ## Evaluation
 Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai akurasi model machine learning. Artinya seberapa baikkah machine learning dapat melakukan tugas prediksi berdasarkan atribut yang diberikan. Untuk memahami bagaimana akurasi dapat diperoleh, dapat dilihat pada formula berikut.
 
-![](https://github.com/hanru789/submision-image/blob/main/accuracy-formula.PNG)
+![accuracy-formula](https://user-images.githubusercontent.com/56568893/159194266-d31bb759-71a5-4f03-af9e-ea7bd76ad1d1.PNG)
 
 - TN = True Negative
 - TP = True Positive
@@ -119,7 +119,7 @@ Untuk menilai kinerja model digunakan metric accuracy. Metric accuracy menilai a
 
 Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror. MSE adalah nilai rata-rata dari kuadrat perbedaan data atau nilai error. Untuk lebih jelas dapat dilihat pada formula berikut.
 
-![](https://github.com/hanru789/submision-image/blob/main/loss-mse.PNG)
+![loss-mse](https://user-images.githubusercontent.com/56568893/159194271-433db5eb-6ea1-4f73-bb2d-8499bb56125f.PNG)
 
 
 
@@ -127,7 +127,7 @@ Untuk melihat berapa nilai loss dari model digunakan Mean Square Eror. MSE adala
 Pada projek ini model machine learning dapat melakukan prediksi dengan akurasi 0,38. Sedangkan akurasi dengan data validation diperoleh val_accuracy sebesar 0,48. Nilai loss dan val_loss yang dihasilkan adalah 0.14. Nilai accuracy dan loss pada setiap epoch dapat dilihat pada grafik berikut.
 
 
-![](https://github.com/hanru789/submision-image/blob/main/accuracy-loss.png)
+![accuracy-loss](https://user-images.githubusercontent.com/56568893/159194268-2f211415-0122-4ff5-ae85-342a25d95ec4.png)
 
 
 [^1]: L. A. Arifin, "HUBUNGAN SARAPAN PAGI DENGAN KONSENTRASI SISWA DI SEKOLAH," Jurnal Pendidikan Olahraga dan Kesehatan, pp. 203 - 207, 2015. 
